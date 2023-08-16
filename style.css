@@ -1,0 +1,101 @@
+body {
+	max-width: 1200px;
+	transform: translate(50%);
+}
+.autocomplete {
+	position: relative;
+	display: inline-block;
+}
+.autocomplete input {
+	width: 500px;
+	height: 60px;
+	padding: 10px;
+	font-size: 16px;
+	border: 1px solid #ccc;
+}
+
+input#searchInput {
+	font-weight: 200;
+	font-size: 48px;
+}
+.autocomplete .autocomplete-items {
+	position: absolute;
+	border: 1px solid #ccc;
+	border-top: none;
+	z-index: 99;
+	top: 100%;
+	left: 0;
+	right: 0;
+}
+.autocomplete .autocomplete-items div {
+	padding: 10px;
+	font-size: 30px;
+	font-weight: 400;
+	border: 2px solid black;
+	cursor: pointer;
+	background-color: lightgray;
+}
+.autocomplete .autocomplete-items div:hover {
+	background-color: lightskyblue;
+}
+.repository-list {
+	padding: 0;
+	margin-top: 20px;
+}
+.repository-list li {
+	border: 2px solid black;
+	display: block;
+	width: 522px;
+}
+
+
+.delete-button {
+	margin-top: 10px;
+	margin-left: 10px;
+	margin-bottom: 30px;
+	border: none;
+	cursor: pointer;
+	padding: 0;
+	width: 70px;
+	height: 70px;
+}
+.cross-icon {
+	display: inline-block;
+	width: 100%;
+	height: 100%;
+	background-color: darkorchid;
+	position: relative;
+}
+.cross-icon::before,
+.cross-icon::after {
+	content: '';
+	position: absolute;
+	width: 70%;
+	height: 3px;
+	background-color: red;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+.cross-icon::before {
+	transform: translate(-50%, -50%) rotate(45deg);
+}
+.cross-icon::after {
+	transform: translate(-50%, -50%) rotate(-45deg);
+}
+
+.wrapper-block {
+	display: flex;
+	padding-left: 10px;
+	box-sizing: border-box;
+	background-color: darkorchid;
+	justify-content: space-between;
+	align-items: center;
+}
+.list-text {
+	width: 400px;
+}
+
+.list-text div{
+	font-size: 24px;
+}
